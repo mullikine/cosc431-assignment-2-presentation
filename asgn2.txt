@@ -1,0 +1,75 @@
+COSC431 
+
+Information Retrieval 
+
+Assignment 2 
+
+PREAMBLE 
+This assignment is worth 20% of your final grade.  Written answers will be emailed as a PDF in the 
+ACM proceedings format.  Templates are available here: 
+https://www.acm.org/publications/proceedings-template 
+21 May 2018 
+DUE DATE:  
+20 marks 
+PART 1: REPORT 
+Information  retrieval  is  such  a  broad  field  there  is  no  practical  way  to  expose  everyone  to  all  of  it.  
+Equally,  what  Andrew  finds  interesting  is  not  necessarily  what  you  find  interesting.    For  this 
+assignment you are to find an information retrieval topic of interest to you and write a report on it. 
+ 
+Do this: 
+Choose, from the list of sources below, a paper that was published in the last 18 months (or is a pre-
+print of a paper to be published). Choose at least two additional related papers from reputable sources 
+on the same topic (for example from the references of your chosen paper). 
+ 
+Write a report of exactly four pages on the topic of your choice. Your report will have at least a title, 
+abstract,  introduction,  conclusion  and  references  (you  will  have  to  reference  your  chosen  papers).  
+The references will be formatted according to the ACM proceedings format (see any SIGIR paper for 
+an example). 
+
+    REFERENCES
+    [1] Burton H Bloom. 1970. Space/time trade-offs in hash coding with allowable
+    errors. Commun. ACM 13, 7 (1970), 422–426.
+    [2] Sergey Brin and Lawrence Page. 1998. The Anatomy of a Large-Scale Hypertextual
+    Web Search Engine. Computer Networks 30, 1-7 (1998), 107–117
+ 
+In  your  report  you  should  outline  the  research  questions  and  main  contribution  of  each  paper  you 
+select. You should discuss how the papers you chose are  related to each other.  Finally,  you  should 
+formulate two new research questions in the area and discuss how you would address these. 
+
+List of sources 
+Journals 
+
+Information Retrieval Journal (IRJ) 
+
+• 
+•  ACM Transactions on Information Systems (TOIS) 
+• 
+• 
+
+Information Processing & Management (IP&M) 
+Journal of the American Society for Information Science and Technology (JASIST)  
+
+Conferences 
+
+•  Annual ACM Conference on Research and Development in Information Retrieval (SIGIR) 
+•  Conference on Information and Knowledge Management (CIKM) 
+•  The IR evaluation forums: TREC, CLEF, NTCIR, FIRE 
+•  Symposium on String Processing and Information Retrieval (SPIRE) 
+•  Australasian Document Computing Symposium (ADCS) 
+•  European Conference on Information Retrieval (ECIR) 
+• 
+
+International Conference on the Theory of Information Retrieval (ICTIR) 
+ 
+
+ 
+PART 2: PRESENTATION 
+30 May 2018 
+You chose something so interesting in PART 1 that you are excited to tell the class all about it.  This is 
+your chance.  During the lecture on this date we’ll turn the class over to you.  Present your work to the 
+class rather than listening to me. 
+ 
+
+no marks 
+
+

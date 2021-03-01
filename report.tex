@@ -1,0 +1,269 @@
+% Created 2018-05-25 Fri 12:32
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{shane}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={shane},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.0.91 (Org mode 9.1.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+4 Page report on the topic of your choice. 
+
+\section{Look for 2 other papers on the same topic}
+\label{sec:org7109831}
+
+
+
+\section{Related papers}
+\label{sec:org1f82685}
+\subsection{Outrageously large neural networks}
+\label{sec:org391b83e}
+
+Under review as a conference paper at ICLR 2017
+
+
+/home/shane/dump/home/shane/notes2018/projects/ir-assignment-2/1701.06538.pdf
+
+Don't have to go into too much detail.
+
+Language modelling.
+
+The capacity of a neural network to absorb information is limited by its number of
+parameters.
+
+Conditional computation, where parts of the network are active on a
+per-example basis, has been proposed in theory as a way of dramatically increasing
+model capacity without a proportional increase in computation. In practice,
+however, there are significant algorithmic and performance challenges. In this
+work, we address these challenges and finally realize the promise of conditional
+computation, achieving greater than 1000x improvements in model capacity with
+only minor losses in computational efficiency on modern GPU clusters.
+
+We introduce
+a Sparsely-Gated Mixture-of-Experts layer (MoE), consisting of up to
+thousands of feed-forward sub-networks. A trainable gating network determines
+a sparse combination of these experts to use for each example. We apply the MoE
+to the tasks of language modeling and machine translation, where model capacity
+is critical for absorbing the vast quantities of knowledge available in the training
+corpora.
+
+We present model architectures in which a MoE with up to 137 billion
+parameters is applied convolutionally between stacked LSTM layers. On large
+language modeling and machine translation benchmarks, these models achieve
+significantly better results than state-of-the-art at lower computational cost
+
+\section{Write it all out here before putting into latex}
+\label{sec:orgfc418f4}
+
+\section{}
+\label{sec:org7084eb4}
+\href{https://news.ycombinator.com/item?id=15892956}{Machine Learning for Systems and Systems for Machine Learning  pdf  | Hacker News}
+
+\section{I have to write a report}
+\label{sec:org8fce2dc}
+Andrew wanted something from one of the journals he asked me to go looking through
+
+Here is a different kind of The Great Convergence: when neural networks go after data structures, (hashes, etc\ldots{}.) and eventually database systems\ldots{}.
+
+The Case for Learned Index Structures by Tim Kraska, Alex Beutel, Ed H. Chi, Jeffrey Dean, Neoklis Polyzotis
+Indexes are models: a B-Tree-Index can be seen as a model to map a key to the position of a record within a sorted array, a Hash-Index as a model to map a key to a position of a record within an unsorted array, and a BitMap-Index as a model to indicate if a data record exists or not. In this exploratory research paper, we start from this premise and posit that all existing index structures can be replaced with other types of models, including deep-learning models, which we term learned indexes. The key idea is that a model can learn the sort order or structure of lookup keys and use this signal to effectively predict the position or existence of records. We theoretically analyze under which conditions learned indexes outperform traditional index structures and describe the main challenges in designing learned index structures. Our initial results show, that by using neural nets we are able to outperform cache-optimized B-Trees by up to 70\% in speed while saving an order-of-magnitude in memory over several real-world data sets. More importantly though, we believe that the idea of replacing core components of a data management system through learned models has far reaching implications for future systems designs and that this work just provides a glimpse of what might be possible.
+
+
+\textasciitilde{}2X space improvement over
+Bloom Filter at same false positive rate
+
+
+\section{}
+\label{sec:org8e154bc}
+research  questions
+
+main contribution of each paper you
+select
+
+
+\section{Criticism}
+\label{sec:org6b7755d}
+\url{https://dawn.cs.stanford.edu/2018/01/11/index-baselines/}
+
+\section{Commentry}
+\label{sec:org140fcb6}
+\url{https://news.ycombinator.com/item?id=12815231}
+
+\section{Article / Charts}
+\label{sec:org1c330dc}
+\url{https://arstechnica.com/information-technology/2016/10/google-ai-neural-network-cryptography/}
+
+
+
+\section{Problem or topic}
+\label{sec:org4adbb35}
+
+\section{Contribution}
+\label{sec:org1a47471}
+What is new?
+
+\section{[New] Network / algorithm / technique}
+\label{sec:orge5ccae2}
+\subsection{How does it work?}
+\label{sec:orge0215a8}
+\subsection{Is it suited to the task?}
+\label{sec:org6cb337e}
+\subsection{Has it been well tested}
+\label{sec:org3c6a330}
+\subsection{Does it really work as claimed?}
+\label{sec:orgb93e61f}
+\subsection{What are the limitations?}
+\label{sec:org421492a}
+
+\section{Which kind of network was chosen}
+\label{sec:org2f157b4}
+\subsection{Why was it chosen?}
+\label{sec:org1bac0c7}
+\subsection{Was it the right one?}
+\label{sec:orge67493b}
+\subsection{Is it clearly described}
+\label{sec:orga4c10ef}
+\subsubsection{Parameters}
+\label{sec:org654861d}
+\subsubsection{Settings}
+\label{sec:org73432fe}
+
+\section{What strengths and/or weaknesses of the NN approach does it illustrate?}
+\label{sec:orga2032cc}
+
+\section{Own questions / Additional relevant information}
+\label{sec:orgf70f62b}
+
+
+\url{https://news.ycombinator.com/item?id=15894896}
+
+\section{Assignment 2 structure}
+\label{sec:org4e061ec}
+\subsection{Title}
+\label{sec:org3c50fe3}
+Report on the convergences of neural networks with information retrieval
+
+\subsection{Abstract}
+\label{sec:org3d15c25}
+This report goes over what I've learned about some of the convergences of neural networks and information retrieval.
+I've tried to take an unbiased approach. After reading 'The Case for Learned Indexes', I wanted to make a case for Classical Data Structures too so I researched other opinions.
+I will quickly go over some of the applications of deep learning to IR.
+Then I'll go into depth with "The case for learned index structures", where I'll acknowledge some of the benefits of learned indexes.
+Finally, I will review some examples of standard data structures and show that they still have a place.
+
+\subsection{Introduction}
+\label{sec:orgebacddc}
+Machine learning plays a role in many aspects of modern IR systems, and deep learning is applied in all of them, such as in semantic matching, learning to rank, modelling user behaviour and learning to index.
+
+Neural networks are going after the data structures now, (B-trees, hashes, etc.). Deep learning has its tendrils all over modern IR systems.
+
+It is interesting to see what key insights into IR problems the new technologies are able to give us and to clarify what is the best tool for the job.
+
+\subsection{Conclusion}
+\label{sec:org3005e65}
+standard data structures and show that they still have a place.
+
+\subsection{References}
+\label{sec:org8c5a4fb}
+\subsubsection{The tutorial}
+\label{sec:org597e716}
+Gives a clear overview of current tried-and-trusted neural methods in IR and how they benefit IR research. It covers key architectures, as well as the most promising future directions.
+
+Key architectures
+\begin{enumerate}
+\item promising future directions
+\label{sec:org8482736}
+\begin{enumerate}
+\item 
+\label{sec:org282a65b}
+\cite{Memaccess}
+NIPS
+\url{https://arxiv.org/pdf/1706.03762.pdfw}
+\begin{enumerate}
+\item commentary
+\label{sec:org7c861c8}
+\url{https://news.ycombinator.com/item?id=15938082}
+
+
+Neural Networks for Information Retrieval
+\url{https://arxiv.org/pdf/1707.04242.pdf}
+\url{https://github.com/nn4ir/nn4ir.github.io}
+Slides
+\url{https://github.com/nn4ir/nn4ir.github.io/tree/master/sigir2017/slides}
+
+Semantic matching:
+methods for supervised, semi- and unsupervised learning for semantic matching.
+
+Learning to Rank with Neural Networks:
+Feature-based models for representation learning, ranking objectives and loss functions
+and training a neural ranker under different levels of supervision.
+
+Modeling user behavior with Neural Networks:
+Probabilistic graphical models, Neural click models, and modeling biases using neural network will be described.
+
+Generating Models:
+The ideas on machine reading task, question answering, conversational IR, and dialogue systems will be covered.
+
+
+\item Lexical vs Semantic matching
+\label{sec:orga27b8fb}
+\begin{enumerate}
+\item Traditional IR models
+\label{sec:org122066d}
+estimate relevance based on lexical matches of query terms in document.
+\item Representation learning based models garner evidence of relevance from all document terms based on semantic matches with query.
+\label{sec:orgfb5f6fb}
+\uline{Both lexical and semantic matching are important and can be modelled with neural networks.}
+\end{enumerate}
+\end{enumerate}
+\end{enumerate}
+
+
+\item Learning to rank
+\label{sec:org5cdbe41}
+shoelace : \url{https://github.com/rjagerman/shoelace} [Jagerman et al., 2017]
+
+\begin{enumerate}
+\item quickrank
+\label{sec:org5177965}
+QuickRank : \url{http://quickrank.isti.cnr.it} [Capannini et al., 2016]
+
+Capannini, G., Lucchese, C., Nardini, F. M., Orlando, S., Perego, R., and Tonellotto, N. Quality versus efficiency in document scoring with learning-to-rank models. Information Processing \& Management 2016.
+\url{https://www.sciencedirect.com/science/article/abs/pii/S0306457316301248}
+\end{enumerate}
+\end{enumerate}
+
+
+\subsection{reference your chosen papers}
+\label{sec:org1e746ec}
+/home/shane/dump/home/shane/notes2018/projects/ir-assignment-2/acmart-master/acmart.bbl
+
+In your report you should outline the research questions and main contribution of each paper you
+select. You should discuss how the papers you chose are related to each other. Finally, you should
+formulate two new research questions in the area and discuss how you would address these.
+
+
+\bibliographystyle{unsrt}
+\bibliography{refs}
+\end{document}

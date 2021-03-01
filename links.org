@@ -1,0 +1,21 @@
+http://sigir.org/awards/best-paper-awards/
+
+
+* Criticism
+https://dawn.cs.stanford.edu/2018/01/11/index-baselines/
+
+
+* Sources
+** Journals
+*** Information Retrieval Journal (IRJ)
+*** ACM Transactions on Information Systems (TOIS)
+*** Information Processing & Management (IP&M)
+*** Journal of the American Society for Information Science and Technology (JASIST)
+** Conferences
+*** Annual ACM Conference on Research and Development in Information Retrieval (SIGIR)
+*** Conference on Information and Knowledge Management (CIKM)
+*** The IR evaluation forums: TREC, CLEF, NTCIR, FIRE
+*** Symposium on String Processing and Information Retrieval (SPIRE)
+*** Australasian Document Computing Symposium (ADCS)
+*** European Conference on Information Retrieval (ECIR)
+*** International Conference on the Theory of Information Retrieval (ICTIR)

@@ -1,0 +1,32 @@
+* Case for learned indexes is a preprinted paper. It hasn't been peer reviewed.
+
+Arxiv does no peer review.
+As I understand it, new submissions get a quick glance to make sure they’re not barking mad, but that’s it.
+
+
+SysML Conference
+March 31 - April 2, 2019 
+Stanford, CA
+
+
+[[https://blog.acolyer.org/2018/01/08/the-case-for-learned-index-structures-part-i/][The case for learned index structures  part I | the morning paper]]
+
+
+http://learningsys.org/nips17/assets/slides/dean-nips17.pdf
+
+
+
+* Sources
+** Journals
+*** Information Retrieval Journal (IRJ)
+*** ACM Transactions on Information Systems (TOIS)
+*** Information Processing & Management (IP&M)
+*** Journal of the American Society for Information Science and Technology (JASIST)
+** Conferences
+*** Annual ACM Conference on Research and Development in Information Retrieval (SIGIR)
+*** Conference on Information and Knowledge Management (CIKM)
+*** The IR evaluation forums: TREC, CLEF, NTCIR, FIRE
+*** Symposium on String Processing and Information Retrieval (SPIRE)
+*** Australasian Document Computing Symposium (ADCS)
+*** European Conference on Information Retrieval (ECIR)
+*** International Conference on the Theory of Information Retrieval (ICTIR)

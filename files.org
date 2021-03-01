@@ -1,0 +1,11 @@
+[[/home/shane/notes2018/uni/cosc/431_Information Retrieval_S1/assignment-2/Assignment 2.pdf][Assignment 2.pdf]]
+
+* Outrageously large neural networkss
+[[/home/shane/dump/home/shane/notes2018/projects/ir-assignment-2/1701.06538.pdf][1701.06538.pdf]]
+https://arxiv.org/pdf/1701.06538.pdf
+
+
+
+* 
+/home/shane/notes2018/projects/ir-assignment-2/example.org
+/home/shane/dump/home/shane/notes2018/projects/ir-assignment-2/acmart-master/acmart.bbl

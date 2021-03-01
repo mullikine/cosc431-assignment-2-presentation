@@ -1,0 +1,2 @@
+* I could present this same paper but from a different perspective
+$HOME/notes/projects/nn-assignment-2/notes.org

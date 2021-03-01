@@ -1,0 +1,6 @@
+* Must use this
+/home/shane/dump/home/shane/notes2018/projects/ir-assignment-2/acmart-master
+
+Can't simply use org-mode, unfortunately.
+
+But I could convert it from org-mode into latex.

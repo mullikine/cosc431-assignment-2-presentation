@@ -1,0 +1,428 @@
+4 Page report on the topic of your choice.
+The IR part must be more cohesive than the NN part.
+
+Go over the summary and conclusion of each paper first.
+
+Bullet point everything.
+
+* Do everything in here for both reports. Make a giant report
+
+* Title
+
+* Abstract
+
+* Introduction
+
+* All Papers (NN and IR)
+** Paper 1 (main)
+*** Title
+Neural information retrieval: introduction to the special issue
+
+*** Source
+https://link.springer.com/article/10.1007%2Fs10791-017-9321-y
+
+Onal, K.D., Zhang, Y., Altingovde, I.S., Rahman, M.M., et al. (2017). Neural information retrieval: At the end of the early years. Information Retrieval Journal.
+
+https://doi.org/10.1007/s10791-017-9321-y
+
+[[https://link.springer.com/article/10.1007/s10791-017-9323-9][Neural information retrieval: introduction to the special issue | SpringerLink]]
+
+*** Terminology used
+**** Word embedding
+# The collective name for a set of language modeling and feature learning techniques in natural language processing (NLP)
+
+Words or phrases from the vocabulary are mapped to vectors of real numbers.
+
+**** _Neural Semantic Compositionality Models_ (NSCM)
+
+Models that determine semantic representations of larger text units from smaller ones.
+
+*** Must skim read this paper
+
+[[$DUMP$HOME/notes2018/projects/ir-assignment-2/neural-information-retrieval.pdf][neural-information-retrieval.pdf]]
+
+**** Research question
+
+**** Main contribution
+
+***** Survey the use of neural LM and word embeddings.
+
+***** Detail the applications of so-called _Neural Semantic Compositionality Models_ (NSCM)
+
+****** Present novel NSCMs designed specifically for IR tasks.
+
+Provide the reader with a foundation on neural language models and with pointers to relevant resources that those who are new to the area should appreciate.
+
+Regarding the set of reviewed textual IR tasks, we largely follow the traditional divide.
+
+**** Conclusions
+***** Purpose
+- Offer an introduction to neural models for information retrieval
+- Survey the state of knowledge up to the end of 2016.
+
++ Several strategies for adapting word embeddings for document retrieval have been introduced:
+  - topically constraining the document collection
+  - new similarity functions
+  - the inclusion of TF-IDF weights for aggregating word embeddings.
+
++ This may be understood as an indication that
+  - we need to design IR specific objectives for learning distributed representations.
+
+Are the training objective and semantic relationships encoded by the embedding vectors useful for the target retrieval task?
+
+****** Future directions
++ Identify the types of semantic word relations that matter to semantic matching in web search, across multiple tasks.
+
+****** Neural semantic compositionality models
+
+That were reviewed in the learn category
+
++ Four sub-categories:
+  1. Learn to match
+  2. Learn to autoencode
+  3. Learn to predict
+  4. Learn to generate
+
+******* Learn to match models (1)
+Trained using noisy relevance signals from click information in click-through logs
+
+******* Other models (2,3,4)
+Designed to predict or generate task-specific context of TTUs.
+
++ The majority of the _Learn to match_ (1) and _Learn to predict_ (2) models
+  - *evaluated* on datasets extracted from commercial search engine logs
+
+A comparative evaluation of models from different sub-categories on publicly
+available data sets, is required in order to gain a deeper understanding of semantic compositionality for matching.
+
+Currently, existing Learn to predict/generate context and Learn to generate models
+mostly rely on temporal context windows.
+
+It would be interesting to examine other types of
+contextual relations in search logs, such as long term search history of users and noisy
+relevance signals exploited by learn to match models.
+
+Another future direction would concern applications of the attention mechanism (Bahdanau et al. 2014) for designing models that can predict where a user would attend in document, given a query.
+Looking forward, we believe there are several key directions where progress is needed.
+First, we presented the document retrieval, query suggestion and ad retrievalsponsored
+search tasks as largely disjoint tasks. However, the models proposed for one task may be
+useful for another. For instance, the context-content2vec model (Grbovic et al. 2015b) was
+evaluated only on matching ads to queries yet the distributed query representations could
+also be evaluated for query suggestion or query auto completion (Cai and de Rijke 2016b).
+In particular, there is a need to compare distributed query representations and similar-
+ity/likelihood scores produced by the proposed models on query tasks. In some work, the
+representations were used as features in learning to rank frameworks and there are no clues
+about the power of these representations in capturing semantics.
+More broadly, there is a need for systematic and broad task-based experimental surveys
+that focus on comparative evaluations of models from different categories, but for the same
+tasks and under the same experimental conditions, very much like the reliable information
+access (RIA) workshop that was run in the early 2000s to gain a deeper understanding of
+query expansion and pseudo relevance feedback (Harman and Buckley 2009).
+Another observation is that recently introduced generative models—mostly based on
+recurrent neural networks—can generate unseen (synthetic) textual units. The generated
+textual units have been evaluated through user studies (Lioma et al. 2016; Sordoni et al.
+2015). For the query suggestion task, generated queries have been found to be useful; and
+so have word clouds of a synthetic document. The impact of these recent neural models on
+user satisfaction or retrieval scenarios should be investigated on real scenarios.
+Over the years, IR has made tremendous progress by learning from user behavior, either
+by introducing, e.g., click-based rankers (Radlinski and Joachims 2005) or, more
+abstractly, by using models that capture behavioral notions such as examination probability
+and attractiveness of search results through click models (Chuklin et al. 2015). How can
+such implicit signals be used to train neural models for semantic matching in web search?
+So far, we have only seen limited examples of the use of click models in training neural
+models for web search tasks.
+Interest in Neural IR has never been greater, spanning both active research and
+deployment in practice 10 (Metz 2016). Neural IR continues to accelerate in quantity of
+work, sophistication of methods, and practical effectiveness (Guo et al. 2016a). New
+methods are being explored that may be computationally infeasible today (see Diaz et al.
+2016), but if proven effective, could motivate future optimization work to make them more
+https://en.wikipedia.org/wiki/RankBrain.
+practically viable (e.g., Jurgovsky et al. 2016; Ordentlich et al. 2016). NN approaches have
+come to dominate speech recognition (2011), computer vision (2013), and NLP (2015).
+Similarly, deep learning will come to dominate information retrieval as well (Manning
+2016).
+At the same time, healthy skepticism about Neural IR also remains. The key question in IR
+2016).
+At the same time, healthy skepticism about Neural IR also remains. The key question in IR
+today might be most succinctly expressed as: ‘‘Will it work?’’ While NN methods have worked
+quite well on short texts, effectiveness on longer texts typical of ad-hoc search has been
+problematic (Cohen et al. 2016; Huang et al. 2013), with only very recent evidence to the
+contrary (Guo et al. 2016a). Side by side comparisons of lexical versus neural methods often
+show at least as many losses as gains for neural methods, with at best an advantage ‘‘on
+average’’ (Van Gysel et al. 2016a, b). In addition, while great strides have been made in
+computer vision through employing a very large number of hidden layers (hence ‘‘deep’’
+learning), such deep structures have typically been less effective in NLP and IR than more
+shallow architectures (Pang et al. 2016a), though again with notable recent exceptions
+(Conneau et al. 2016). When Neural IR has led to improvements in ad-hoc search results,
+improvements appear relatively modest (Diaz et al. 2016; Zamani and Croft 2016a) when
+compared to traditional query expansion techniques for addressing vocabulary mismatch, such
+as pseudo-relevance feedback (PRF). Both Ganguly et al. (2016) and Diaz et al. (2016) have
+noted that global word embeddings, trained without reference to user queries, versus local
+methods like PRF for exploiting query-context, appear limited similarly to the traditional
+global-local divide seen with existing approaches like topic modeling (Yi and Allan 2009).
+As Li (2016) put it, ‘‘Does IR Need Deep Learning?’’ Such a seemingly simple question
+requires careful unpacking. Much of the above discussion assumes Neural IR should
+deliver new state-of-the-art quality of search results for traditional search tasks. While it
+may do so, this framing may be far too narrow, as Li (2016)’s presentation suggests. The
+great strength of Neural IR may lie in enabling a new generation of search scenarios and
+modalities, such as searching via conversational agents (Yan et al. 2016), multi-modal
+retrieval (Ma et al. 2015a, b), knowledge-based search IR (Nguyen et al. 2016), or syn-
+thesis of relevant material (Lioma et al. 2016). It may also be that Neural IR will provide
+greater traction for other future search scenarios not yet considered.
+Given that the efficacy of deep learning approaches is often driven by ‘‘big data’’, will
+Neural IR represent yet another fork in the road between industry and academic research,
+where massive commercial query logs deliver Neural IR’s true potential? Or should we
+frame this more positively as an opportunity for research on generating training material or
+even simulation, as has previously been pursued for, e.g., learning to rank (Liu 2009), see,
+e.g., Azzopardi et al. (2007), Berendsen et al. (2013b)? There is also an important contrast
+to note here between supervised scenarios, such as learning to rank versus unsupervised
+learning of word embeddings or typical queries (see Mitra 2015; Mitra and Craswell 2015;
+Sordoni et al. 2015; Van Gysel et al. 2016a, b). LeCun et al. (2015) wrote, ‘‘we expect
+unsupervised learning to become far more important in the longer term.’’ Just as the rise of
+the Web drove work on unsupervised and semi-supervised approaches by the sheer volume
+of unlabeled data it made available, the greatest value of Neural IR may naturally arise
+where the biggest data is found: continually generated and ever-growing behavioral traces
+in search logs, as well as ever-growing online content.
+While skepticism of Neural IR may well remain for some time, the practical importance
+of search today, coupled with the potential for significantly new traction offered by this
+‘‘third wave’’ of NNs, makes it unlikely that researchers will abandon Neural IR anytime
+soon without having first exhaustively tested its limits. As such, we expect the pace and
+interest in Neural IR will only continue to blossom, both in new research and increasing
+application in practice. Consequently, this first special-issue journal on Neural IR in 2017
+will likely attract tremendous interest and is well-poised for timely impact on research and
+practice.
+
+#+END_COMMENT
+
+** Paper 2 (Outrageously large neural networks)
+
+[[$DUMP$HOME/notes2018/projects/ir-assignment-2/1701.06538.pdf][1701.06538.pdf]]
+
+Don't have to go into too much detail.
+
+*** How the papers relate to each other
+
+*** Problem
+Neural networks are limited in their ability to absorb information by the number of parameters. 
+
+**** How this applies to IR
+***** Better tools
+Language modeling
+Machine translation
+
+*** Theoretical solution
+Conditional computation is a way of only activating part of a neural network on a per example basis in order to 
+increase model capacity without increasing computation.
+
+*** Solution
+The Sparsely-Gated Mixture-of-Experts layer (MoE)
+
+**** Architecture
+Thousands of feed-forward sub-networks.
+
+A trainable gating network determines a sparse combination of these experts to use for each example.
+n
+*** Tasks, solution applied to:
+**** language modeling and machine translation
+
+Capacity is critical for absorbing the vast quantities of knowledge available in the training corpora.
+
+**** Experimental results
+Greater than 1000x improvementere able to get achieve realize the promise of conditional computation.
+
+On large language modeling and machine translation benchmarks, these models achieve significantly better results than state-of-the-art at lower computational cost.
+
+*** Assignment criteria
+**** Research question
+
+**** Main contribution
+
+** Paper 3 (The Case for learned index structures)
+
+
+** Paper 4 (Learning Memory Access Patterns)
+*** Summary
+**** Premise
+
+***** Need
+New approaches towards efficient computing
+
+****** Because
++ explosion in workload complexity
++ slow-down in Moore's law scaling
+
+***** New research Advancements
+
++ ML in software optimizations, augmenting or replacing traditional
+heuristics and data structures.
+
+***** Problem
+The space of machine learning for computer hardware architecture is only lightly explored.
+
+
+**** Main contribution
+Demonstrate the potential of deep learning to address the von Neumann bottleneck of memory performance.
+
+***** Future directions (of research)
+It talks about this. What are they?
+
+****** Identify the types of semantic word relations that matter to semantic matching in web search, across multiple tasks.
+****** 
+
+***** Focus
+
+****** Problem
+Learning memory access patterns
+
+****** Goal
+Construct accurate and efficient memory prefetchers.
+
+****** Compare
+Contemporary prefetching strategies to n-gram models in natural language processing
+
+****** Show
+recurrent neural networks can serve as a drop-in replacement.
+
+****** Rresults
+Neural networks consistently demonstrate superior performance in terms of precision and recall.
+
+
+** Over the paper's I've thought about
+2 new research questions
+
+* references
+
+* Write it all out here before putting into latex
+
+* 
+[[https://news.ycombinator.com/item?id=15892956][Machine Learning for Systems and Systems for Machine Learning  pdf  | Hacker News]]
+
+* I have to write a report
+Andrew wanted something from one of the journals he asked me to go looking through
+
+The Case for Learned Index Structures by Tim Kraska, Alex Beutel, Ed H. Chi, Jeffrey Dean, Neoklis Polyzotis
+Indexes are models: a B-Tree-Index can be seen as a model to map a key to the position of a record within a sorted array, a Hash-Index as a model to map a key to a position of a record within an unsorted array, and a BitMap-Index as a model to indicate if a data record exists or not. In this exploratory research paper, we start from this premise and posit that all existing index structures can be replaced with other types of models, including deep-learning models, which we term learned indexes. The key idea is that a model can learn the sort order or structure of lookup keys and use this signal to effectively predict the position or existence of records. We theoretically analyze under which conditions learned indexes outperform traditional index structures and describe the main challenges in designing learned index structures. Our initial results show, that by using neural nets we are able to outperform cache-optimized B-Trees by up to 70% in speed while saving an order-of-magnitude in memory over several real-world data sets. More importantly though, we believe that the idea of replacing core components of a data management system through learned models has far reaching implications for future systems designs and that this work just provides a glimpse of what might be possible.
+
+~2X space improvement over
+Bloom Filter at same false positive rate
+
+* Each paper
+** Research questions
+** Main contribution
+
+* How the papers relate to each other
+
+* Learned Index for B-Tree, How is it a CDF?
+** Theory
+If we consider the leaf pages of an index as a sorted array, the inner pages of the index point towards a (bucketized) position within that array.
+It essentially describes the cummulative distribution function (CDF), mapping from keys to array positions.
+
+** Reasoning why LI is better?
+With ML we can do CDF better because
+*** The learned model (in this case NN) is much smaller than a traditional b-tree.
+*** The learned model can predict the CDF value much more accurately than a simple b-tree, which improves performance
+
+** Criticism
+Do we really need a NN for that? After all, the NN is just an approximation of the CDF function. There are many other ways to approximate a function, for example spline interpolation.
+http://databasearchitects.blogspot.co.nz/2017/12/the-case-for-b-tree-index-structures.html
+
+* Memory-efficient hash tables
+For this problem, a simple and beautiful data structure, the cuckoo hash, can achieve 5-20x less space overhead than learned indexes, and that it can be surprisingly fast on modern hardware, running nearly 2x faster.
+
+These results are interesting because the cuckoo hash is asymptotically better than simpler hash tables at load balancing, and thus makes optimizing the hash function using machine learning less important: it’s always great to see cases where beautiful theory produces great results in practice.
+
+* Criticism
+https://dawn.cs.stanford.edu/2018/01/11/index-baselines/
+
+** Hype
+Replace conventional indexing data structures like B-trees and hash maps by instead fitting a neural network to the dataset.
+
+*** Promising results
+Learned indexes compared with several standard data structures with promising results.
+
+| range searches | 3.2x speedups over B-trees while using 9x less memory                               |
+| point lookups  | 80% reduction of hash table memory overhead while maintaining a similar query time. |
+
+*** Interesting because
+**** They could enable self-tuning databases
+**** There are many other data structures which are ripe for researchers to apply these methods to.
+
+***** Thomas Neumann
+http://databasearchitects.blogspot.co.nz/2017/12/the-case-for-b-tree-index-structures.html
+
+Using spline interpolation in a B-tree for range search.
+This easy-to-implement strategy can be competitive with learned indexes.
+
+
+In this post, we examine a second use case in the paper: memory-efficient hash tables.
+
+We show that for this problem, a simple and beautiful data structure, the cuckoo hash, can achieve 5-20x less space overhead than learned indexes, and that it can be surprisingly fast on modern hardware, running nearly 2x faster.
+
+These results are interesting because the cuckoo hash is asymptotically better than simpler hash tables at load balancing, and thus makes optimizing the hash function using machine learning less important: it’s always great to see cases where beautiful theory produces great results in practice.
+
+
+*** Fast Hash Tables using Cuckoo
+**** The hashing use case in the learned indexes paper.
+
+A typical hash function distributes keys randomly across the slots in a hash table, causing some slots to be empty, while others have collisions, which require some form of chaining of items.
+
+If lots of memory is available, this is not a problem: simply create many more slots than there are keys in the table (say, 2x) and collisions will be rare.
+However, if memory is scarce, heavily loaded tables will result in slower lookups due to more chaining.
+
+The authors show that, by learning a hash function that spreads the input keys more evenly throughout the table, they can produce more space-efficient tables (with a high percent of slots loaded) that are still fast to access.
+
+In more detail, the authors implemented hash tables using separate chaining for collisions, and compared a standard (random) hash function with a learned one. They report the access time, memory occupied by empty slots, and percent of slots empty for tables with different numbers of slots (from 0.75x to 1.25x the number of keys):
+
+Spreading the input keys definitely helps the simple separate chaining hash table use less space, but can we do better? In fact, other data structures can be asymptotically better at high load. As an example, we implemented bucketized cuckoo hashing, a simple and beautiful technique that can achieve 99% occupancy and serve all lookups with just two memory accesses thanks to the power of two choices. Unlike the learned indexes in the paper, cuckoo hashing doesn’t require a training step, and it supports arbitrary changes to the key distribution at runtime, making it easy to apply in many systems. The key idea is just to map each key to two possible buckets and place it in the least loaded one, which, it turns out, can achieve very high loads while retaining amortized O(1) inserts and worst-case O(1) lookups. On modern hardware, we found that cuckoo hashing can also be extremely fast—perhaps surprisingly, even outperforming separate chaining in some cases.
+
+
+* Commentry
+https://news.ycombinator.com/item?id=12815231
+
+* Article / Charts
+https://arstechnica.com/information-technology/2016/10/google-ai-neural-network-cryptography/
+
+* Problem or topic
+
+* Contribution
+What is new?
+
+* [New] Network / algorithm / technique
+** How does it work?
+** Is it suited to the task?
+** Has it been well tested
+** Does it really work as claimed?
+** What are the limitations?
+
+* Which kind of network was chosen
+** Why was it chosen?
+** Was it the right one?
+** Is it clearly described
+*** Parameters
+*** Settings
+
+* What strengths and/or weaknesses of the NN approach does it illustrate?
+
+* Own questions / Additional relevant information
+
+
+https://news.ycombinator.com/item?id=15894896
+
+
+
+* Assignment 2 structure
+** Title
+
+** Abstract
+
+
+** introduction
+** conclusion
+** references
+
+** reference your chosen papers
+$DUMP$HOME/notes2018/projects/ir-assignment-2/acmart-master/acmart.bbl
+
+In your report you should outline the research questions and main contribution of each paper you
+select. You should discuss how the papers you chose are related to each other. Finally, you should
+formulate two new research questions in the area and discuss how you would address these.
